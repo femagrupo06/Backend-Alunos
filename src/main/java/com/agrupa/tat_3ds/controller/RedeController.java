@@ -1,6 +1,7 @@
 package com.agrupa.tat_3ds.controller;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,6 +11,7 @@ import java.net.InetAddress;
 
 @RestController
 @RequestMapping("/trabalho")
+@CrossOrigin(origins = "http://localhost:4200")
 public class RedeController {
 
     @GetMapping("/config/rede")
