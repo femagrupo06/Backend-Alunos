@@ -25,7 +25,7 @@ public class TrabalhoController {
 
     @PostMapping(path = "/editar-grupo/{idGrupo}/{nomeGrupo}")
     public ResponseEntity<Void> editarGrupo(@PathVariable Integer idGrupo, @RequestBody String nomeGrupo){
-//        this.trabalhoService.editarGrupo(idGrupo, nomeGrupo);
+        this.trabalhoService.editarGrupo(idGrupo, nomeGrupo);
         return ResponseEntity.accepted().build();
     }
 }
